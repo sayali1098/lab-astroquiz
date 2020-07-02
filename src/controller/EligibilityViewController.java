@@ -46,6 +46,10 @@ public class EligibilityViewController extends HttpServlet {
 		user.setHeight(height);
 		user.setWeight(weight);
 		
+		BasicEligibility one = new EligibiltyCheck();
+//		EligibiltyCheck check = new EligibiltyCheck();
+		boolean spaceEligible = one.basicEligibilityCheck(user);
+		
 		System.out.println(spaceEligible);
 			if(spaceEligible)
 			{

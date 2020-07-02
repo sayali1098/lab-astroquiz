@@ -18,6 +18,8 @@ public class Eligibility extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	String points=request.getParameter("points");
+	EligibiltyCheck check = new EligibiltyCheck();
+	check.checkQuizAnswer(points);
 	
 	if(false)
 	{
